@@ -1,0 +1,19 @@
+@media screen and (max-width:500px) {
+   header .container{
+    display:flex;
+    width: 80px;
+    flex-direction: column;
+
+   }
+   .button{
+       margin-top: 5px;
+       width: 300px;
+       
+   }
+}
+
+@media screen and (min-width:1000px) {
+.descricao{
+    width: 50%;
+}
+}
