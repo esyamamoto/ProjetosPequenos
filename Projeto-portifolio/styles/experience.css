@@ -1,0 +1,124 @@
+.experience {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  gap: 100px;
+  margin: 0 auto;
+}
+
+.experience .subtitle {
+  color: #808080;
+}
+
+.experience-text {
+  font-size: 1.2rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #525252e8;
+}
+
+.experience-text strong {
+  color: #141414;
+}
+
+.company {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap: 10px 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  position: relative;
+}
+
+.company::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.company-year {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  color: #525252e8;
+  font-size: 0.875rem;
+  width: 80px;
+  text-align: right;
+}
+
+.company-title {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.company-text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252e8;
+}
+
+.company-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+  color: #ffffff;
+}
+
+.company-skills li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color:#575757;
+  padding: 5px 10px;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experience .subtitle {
+    color: #141414;
+  }
+  .experience-text{
+    font-size: 1.25rem;
+  }
+  .company-title {
+    font-size: 1.25rem;
+  }
+  .company-year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .company-year::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 400px) {
+  .company {
+    grid-template-columns: 1fr;
+  }
+}
